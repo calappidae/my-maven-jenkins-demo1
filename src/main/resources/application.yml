@@ -1,0 +1,5 @@
+server:
+  servlet:
+    context-path: /myJenkinsDemo
+  port: 8080
+

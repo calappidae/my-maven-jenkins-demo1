@@ -1,0 +1,6 @@
+cd /var/jenkins_home/workspace/zx-order-api
+docker stop zx-order || true
+docker rm zx-order || true
+docker rmi zx-order || true
+docker build -t zx-order .
+docker run -d -p 8888:8888 --name zx-order zx-order:latest
